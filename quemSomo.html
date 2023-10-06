@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üsystem</title>
+    <link rel="stylesheet" href="quemSomos.css">
+</head>
+
+<body>
+    <div class="barraTopo">
+        <img src="imag/redlogos.jpg" alt="lodo Üsystem">
+    
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <img src="imag/lupa.png" id="btnBusca" alt="Buscar"/>
+        </div>
+
+        <div class ="burguer">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+            <ul class="menu">
+                <li><a href="home.html">Home </a></li>
+                <li><a href="Produtos.html">Serviços</a></li>
+                <li><a href="pedidos.html">Contato</a></li>
+                <li><a href="quemSomo.html">Quem somos</a></li>
+                
+            </ul>
+    </div>
+
+    <div class="separador">
+        <div class="separadores"></div>
+    </div>
+
+    <div class ="fotosmeio">
+    
+        <div>
+            <h1>Cicero</h1>
+            <img src="imag/cicero.jpg" alt="">
+            <p>Desenvolvedor Full Stack</p>
+    
+    
+            
+        </div>
+        
+        <div>
+            <h1>Claudia</h1>
+            <img src="imag/claudia.jpeg" alt="">
+            <p>Analista de  Sistemas</p>
+        </div>
+        
+    
+        <div>
+          <h1>Robinson</h1>
+         <img src="imag/robinson.jpg" alt="">
+         <p>Administrador de Banco de Dados (DBA)</p> 
+          
+        </div>
+        
+        <div>
+            <h1>Sandoval</h1>      
+            <img src="imag/sandoval.jpg" alt="">
+            <p>Desenvolvedor Full Stack</p
+                >
+           
+        </div>
+    
+    
+      
+      </div>
+     
+      
+     
+        
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        const burguer = document.querySelector('.burguer');
+        const linha1 = document.querySelector('.linha1');
+        const linha2 = document.querySelector('.linha2');
+        const linha3 = document.querySelector('.linha3');
+        const menu = document.querySelector('.menu');
+
+        burguer.addEventListener('click',function(){
+            linha1.classList.toggle('linha1-active');
+            linha2.classList.toggle('linha2-active');
+            linha3.classList.toggle('linha3-active');
+            menu.classList.toggle('exibir');
+        });
+
+     </script>
+
+</body>
+</html>
